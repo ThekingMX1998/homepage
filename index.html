@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,user-scalable=yes">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <title>个人主页 :: Jinsun</title>
+  <meta name="description" content="請往前走不要在此停留">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="website">
+  <meta property="og:site-name" content="个人主页 :: Jinsun">
+  <meta property="og:title" content="个人主页 :: Jinsun">
+  <meta property="og:description" content="請往前走不要在此停留">
+  <meta property="og:image" content="https://avatars.cloudflare.steamstatic.com/faa67099349db1d002ad25a0cd21d4baba41e64f_full.jpg">
+  <meta property="og:url" content="https://www.9887665.xyz">
+  <link rel="shortcut icon" href="https://avatars.cloudflare.steamstatic.com/faa67099349db1d002ad25a0cd21d4baba41e64f_full.jpg">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.css">
+  <link rel="stylesheet" href="https://cdn.jsdmirror.com/npm/aplayer/dist/APlayer.min.css">
+  <link href="https://cdn.jsdmirror.com/npm/font-pingfang-sc@1.0.5/index.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/cb93deac54.js" crossorigin="anonymous" async></script>
+  <script src="https://cdn.jsdmirror.com/npm/font-pingfang-sc@1.0.5/index.min.js" defer></script>
+  <script src="https://cdn.jsdmirror.com/npm/typed.js@2.0.11" defer></script>
+  <script>
+    (function() {
+      if (!!window.ActiveXObject || "ActiveXObject" in window) {
+        window.addEventListener('load', function() {
+          alert('你的浏览器似乎不支持呢~');
+        });
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div id="body-wrap">
+    <nav class="not_index_bg" id="nav" style="background-image:url(https://img.qlqqs.com/random)">
+      <div id="page_site-info">
+        <div id="site-title">
+          <span class="blogtitle"></span>
+        </div>
+      </div>
+    </nav>
+      <main id="content-outer">
+        <div class="layout_page" id="content-inner">
+          <aside class="aside_content" id="aside_content">
+            <div class="card-widget card-info">
+              <div class="card-content">
+                <div class="card-info-avatar is-center">
+                  <img class="avatar-img" src="https://avatars.cloudflare.steamstatic.com/faa67099349db1d002ad25a0cd21d4baba41e64f_full.jpg" alt="Jinsun 个人头像" loading="lazy">
+                  <div class="author-info__name">Jinsun</div>
+                  <div class="author-info__description">請往前走不要在此停留</div>
+              </div>
+                <div class="card-info-social-icons is-center">
+                  <a class="social-icon" href="https://v.douyin.com/iyspHFcA" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-tiktok fa-bounce"></i>
+                  </a>
+                  <a class="social-icon" href="https://163cn.tv/AOqj0bQ" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-soundcloud"></i>
+                  </a>
+                  <a class="social-icon" href="https://s.team/p/gmkt-fqnw" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-steam"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-widget card-announcement">
+              <div class="card-content">
+                <div class="item-headline">
+                  <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                  <span>一言</span></div>
+                <div id="hitokoto"></div>
+              </div>
+            </div>
+            <div class="card-widget card-announcement">
+              <div class="card-content">
+                <div class="item-headline">
+                  <i class="fa fa-calendar" aria-hidden="true"></i>
+                  <span>今日诗词</span></div>
+                <div id="jinrishici-sentence"></div>
+              </div>
+            </div>
+          </aside>
+
+          <article id="page">
+            <div class="article-container">
+              <h2>音樂</h2>
+              <meting-js server="netease" type="playlist" id="13125059835" autoplay="false" volume="0.2"></meting-js>
+              <hr>
+              <h2>赞助地址</h2>
+              <div class="sponsor">
+                <p>
+                  <!-- <strong>USDT-TRC20:</strong>TL4dmRwbUhxj2MEmtNtvbLr6v45qcpiqNF -->
+                  </p>
+                <p>
+                  <strong>爱发电:</strong>
+                  <a href="https://afdian.com/@thekingmengxian" target="_blank">https://afdian.com/@thekingmengxian</a></p>
+              </div>
+              <h2>評論區</h2>
+              <div id="tcomment"></div>
+            </div>
+          </article>
+        </div>
+      </main>
+      <footer id="footer">
+        <div id="footer-wrap">
+          <div class="copyright">Copyright © 2020 - <span id="year"></span> Jinsun. All Rights Reserved.</div>
+          <div class="footer-links">
+            <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank" class="beian">浙ICP备2026012590号
+            </a>
+            <a href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33100202001644" target="_blank" class="beian">
+              <img src="https://beian.mps.gov.cn/img/logo01.dd7ff50e.png" alt="公安备案" style="height:1.1em;vertical-align:middle;margin-right:0.2em;"> 浙公网安备33100202001644号
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdmirror.com/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+      <script>
+        // 初始化打字机效果
+        document.addEventListener('DOMContentLoaded', function() {
+          var typed = new Typed(".blogtitle", {
+            strings: ['于是我开始爱茉莉', '爱一切清甜淡香的东西', '生命太过疯狂', '所以我享受当下', '我说我是木讷的树', '我说爱是细腻的小雨', '那些平平淡淡的日子', '有人陪着我的话', '我想这即是幸福', '是那淡淡的花香'],
+            startDelay: 300,
+            typeSpeed: 100,
+            loop: true,
+            backSpeed: 50,
+            showCursor: true
+          });
+        });
+      </script>
+    <script src="https://cdn.jsdmirror.com/npm/jquery.fancybox@2.1.5/source/jquery.fancybox.js" defer></script>
+    <script defer>
+      // 自动更新年份
+      document.addEventListener('DOMContentLoaded', function() {
+        var yearElement = document.getElementById('year');
+        if (yearElement) {
+          yearElement.textContent = new Date().getFullYear();
+        }
+      });
+    </script>
+    <script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+    <script src="https://cdn.jsdmirror.com/npm/instant.page@3.0.0/instantpage.js" type="module"></script>
+    <script src="https://cdn.jsdmirror.com/npm/lazysizes@5.2.0/lazysizes.min.js" async></script>
+    <script src="https://cdn.jsdmirror.com/npm/aplayer/dist/APlayer.min.js" defer></script>
+    <script src="https://cdn.jsdmirror.com/npm/meting@2/dist/Meting.min.js" defer></script>
+    <script>
+    window.meting_api = "https://meting-api.9887665.xyz/api?server=:server&type=:type&id=:id&r=:r";
+    </script>
+    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8" defer></script>
+    <script src="https://cdn.jsdmirror.com/gh/stevenjoezhang/live2d-widget@latest/autoload.js" async></script>
+    <script src="https://cdn.jsdmirror.com/gh/TRHX/CDN-for-itrhx.com@3.0.8/js/maodian.js" defer></script>
+    <script src="https://cdn.jsdmirror.com/npm/twikoo@1.6.44/dist/twikoo.min.js" defer></script>
+    <script type="text/javascript" defer>(function($) {
+          $.fn.snow = function(options) {
+            var $flake = $('<div id="snowbox" />').css({
+              'position': 'absolute',
+              'z-index': '9999',
+              'top': '-50px'
+            }).html('&#10052;'),
+            documentHeight = $(document).height(),
+            documentWidth = $(document).width(),
+            defaults = {
+              minSize: 10,
+              maxSize: 20,
+              newOn: 1000,
+              flakeColor: "#AFDAEF"
+            },
+            options = $.extend({},
+            defaults, options);
+            var interval = setInterval(function() {
+              var startPositionLeft = Math.random() * documentWidth - 100,
+              startOpacity = 0.5 + Math.random(),
+              sizeFlake = options.minSize + Math.random() * options.maxSize,
+              endPositionTop = documentHeight - 200,
+              endPositionLeft = startPositionLeft - 500 + Math.random() * 500,
+              durationFall = documentHeight * 10 + Math.random() * 5000;
+              $flake.clone().appendTo('body').css({
+                left: startPositionLeft,
+                opacity: startOpacity,
+                'font-size': sizeFlake,
+                color: options.flakeColor
+              }).animate({
+                top: endPositionTop,
+                left: endPositionLeft,
+                opacity: 0.2
+              },
+              durationFall, 'linear',
+              function() {
+                $(this).remove()
+              });
+            },
+            options.newOn);
+          };
+        })(jQuery);
+        $(function() {
+          $.fn.snow({
+            minSize: 5,
+            maxSize: 50,
+            newOn: 800
+          });
+        });
+    </script>
+    <script defer>
+      // 初始化 Twikoo 评论
+      if (window.twikoo) {
+        twikoo.init({
+          envId: 'https://twikoo.9887665.xyz/.netlify/functions/twikoo',
+          el: '#tcomment',
+        });
+      } else {
+        document.addEventListener('DOMContentLoaded', function() {
+          if (window.twikoo) {
+            twikoo.init({
+              envId: 'https://twikoo.9887665.xyz/.netlify/functions/twikoo',
+              el: '#tcomment',
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+
+</html>
